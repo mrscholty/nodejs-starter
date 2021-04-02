@@ -1,4 +1,4 @@
-##Node.js starter
+# Node.js starter
 
 starter for a Node.js application with ES6 module support
 
