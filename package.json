@@ -1,0 +1,17 @@
+{
+  "name": "nodejs-starter",
+  "version": "1.0.0",
+  "description": "starter for Node.js application",
+  "main": "index.js",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "nodemon --quiet ./src/app.js || true"
+  },
+  "keywords": [],
+  "author": "Markus Scholtysik",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
