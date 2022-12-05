@@ -1,12 +1,24 @@
 # Node.js starter
 
-starter for a Node.js application with ES6 module support
+starter for Node.js applications
 
-#### Dependencies
-- [nodemon](https://nodemon.io/) (auto restart Node.js)
+#### features
+- ES6 module mode
+- unit testing
+- static code analysis
 
-#### Install npm dependencies
+#### dependencies
+- [nodemon](https://nodemon.io/) (auto restart app on changes)
+- [mocha](https://mochajs.org/) (unit test framework)
+- [chai](https://www.chaijs.com/) (assertion library)
+- [eslint](https://eslint.org/) (static code analysis)
+
+
+#### install npm dependencies
 - `npm install`
 
-#### Run
+#### test
+- `npm test`
+
+#### run
 - `npm start`

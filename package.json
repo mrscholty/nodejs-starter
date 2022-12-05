@@ -2,16 +2,24 @@
   "name": "nodejs-starter",
   "version": "1.0.0",
   "description": "starter for Node.js application",
-  "main": "index.js",
   "type": "module",
   "private": true,
   "scripts": {
-    "start": "nodemon --quiet ./src/app.js || true"
+    "start": "nodemon --quiet ./src/app.js || true",
+    "test": "nodemon --quiet --exec mocha './test/**/*.js'",
+    "lint": "npx eslint src"
   },
   "keywords": [],
   "author": "Markus Scholtysik",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
-    "nodemon": "^2.0.7"
+    "chai": "^4.3.7",
+    "eslint": "^8.29.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.6.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "mocha": "^10.1.0",
+    "nodemon": "^2.0.20"
   }
 }
