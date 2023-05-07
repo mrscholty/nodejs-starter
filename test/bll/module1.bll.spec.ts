@@ -3,7 +3,7 @@ import {expect} from 'chai';
 
 describe('add', function () {
     it('should return 3', function () {
-        const result = add(1, 2);
+        const result: number = add(1, 2);
         expect(result).to.equal(3);
     });
 });

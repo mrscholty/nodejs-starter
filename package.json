@@ -5,9 +5,10 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "start": "nodemon --quiet ./src/app.js || true",
+    "start": "nodemon --quiet ./dist-tsc/app.js || true",
     "test": "nodemon --quiet --exec mocha './test/**/*.js'",
-    "lint": "npx eslint src"
+    "lint": "npx eslint src",
+    "dev": "tsc-watch --onFirstSuccess \"npm run start\""
   },
   "keywords": [],
   "author": "Markus Scholtysik",
@@ -20,6 +21,9 @@
     "eslint-plugin-n": "^15.6.0",
     "eslint-plugin-promise": "^6.1.1",
     "mocha": "^10.1.0",
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "tsc-watch": "^6.0.4",
+    "typescript": "^5.0.4"
   }
 }
