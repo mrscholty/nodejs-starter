@@ -5,15 +5,19 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "start": "nodemon --quiet ./dist-tsc/app.js || true",
+    "build-dev": "npx rollup --config rollup.dev.config.js && node ./dist/app.js",
+    "build-prod": "npx rollup --config rollup.prod.config.js",
     "test": "nodemon --quiet --exec mocha './test/**/*.js'",
     "lint": "npx eslint src",
-    "dev": "tsc-watch --onFirstSuccess \"npm run start\""
+    "dev": "tsc-watch --onSuccess \"npm run build-dev\"",
+    "prod": "tsc && npm run build-prod"
   },
   "keywords": [],
   "author": "Markus Scholtysik",
   "license": "MIT",
   "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "@rollup/plugin-terser": "^0.4.1",
     "chai": "^4.3.7",
     "eslint": "^8.29.0",
     "eslint-config-standard": "^17.0.0",
@@ -22,6 +26,9 @@
     "eslint-plugin-promise": "^6.1.1",
     "mocha": "^10.1.0",
     "nodemon": "^2.0.20",
+    "rollup": "^3.21.5",
+    "rollup-plugin-delete": "^2.0.0",
+    "rollup-plugin-summary": "^2.0.0",
     "ts-node": "^10.9.1",
     "tsc-watch": "^6.0.4",
     "typescript": "^5.0.4"
