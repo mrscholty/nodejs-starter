@@ -4,14 +4,15 @@ starter for Node.js applications
 
 #### features
 - ES6 module mode
+- TypeScript
 - unit testing
 - static code analysis
 
 #### dependencies
-- [nodemon](https://nodemon.io/) (auto restart app on changes)
+- [tsc-watch](https://www.npmjs.com/package/tsc-watch) (transpile TypeScrpit and  watch)
 - [mocha](https://mochajs.org/) (unit test framework)
 - [chai](https://www.chaijs.com/) (assertion library)
-- [eslint](https://eslint.org/) (static code analysis)
+- [eslint](https://eslint.org/) (static code analysis) with several plugins
 
 
 #### install npm dependencies
@@ -20,5 +21,8 @@ starter for Node.js applications
 #### test
 - `npm test`
 
-#### run
-- `npm start`
+#### run dev
+- `npm run dev`
+
+#### run prod
+- `npm run prod`

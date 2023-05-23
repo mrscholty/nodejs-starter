@@ -11,8 +11,7 @@
     "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
     "rules": {
         "indent": [
-            "error",
-            "tab"
+            "off"
         ],
         "linebreak-style": [
             "error",
