@@ -1,5 +1,5 @@
+import {describe, it, expect} from "vitest";
 import {add} from '../../src/bll/module1.bll.js';
-import {expect} from 'chai';
 
 describe('add', function () {
     it('should return 3', function () {
