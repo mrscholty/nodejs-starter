@@ -10,8 +10,7 @@ starter for Node.js applications
 
 #### dependencies
 - [tsc-watch](https://www.npmjs.com/package/tsc-watch) (transpile TypeScrpit and  watch)
-- [mocha](https://mochajs.org/) (unit test framework)
-- [chai](https://www.chaijs.com/) (assertion library)
+- [vite](https://vitest.dev) (unit test framework)
 - [eslint](https://eslint.org/) (static code analysis) with several plugins
 
 
@@ -25,4 +24,4 @@ starter for Node.js applications
 - `npm run dev`
 
 #### run prod
-- `npm run prod`
+- `npm run build`
