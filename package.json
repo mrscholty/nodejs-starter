@@ -2,17 +2,22 @@
   "name": "nodejs-starter",
   "version": "1.0.0",
   "description": "starter for Node.js application",
-  "type": "module",
   "private": true,
   "scripts": {
     "test": "vitest",
-    "start": "nodemon --quiet ./src/app.js || true"
+    "dev": "npx nodemon",
+    "build": "rimraf ./build && tsc",
+    "start": "npm run build && node build/app.js"
   },
   "keywords": [],
   "author": "Markus Scholtysik",
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "^22.5.5",
     "nodemon": "^3.1.4",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2",
     "vitest": "^2.0.4"
   }
 }
